@@ -1,18 +1,23 @@
--- 01_qualidade_dados.sql
--- Objetivo: checar a qualidade dos dados antes da análise.
+# Entregas atrasadas e satisfação do cliente (Olist)
 
--- 1) Quantos pedidos existem por status?
--- Achado: 96.478 dos 99.441 pedidos (cerca de 97%) estão como 'delivered'.
--- Só esses entram na análise de entrega.
-select order_status, count(*) as pedidos
-from tb_orders
-group by order_status
-order by pedidos desc;
+Análise de entregas atrasadas e satisfação do cliente com SQL e Power BI.
 
--- 2) Existem pedidos 'delivered' sem data de entrega?
--- Achado: 8 pedidos. Serão excluídos da análise de atraso.
-select count(*) as pedidos_sem_data
-from tb_orders
-where order_status = 'delivered'
-  and order_delivered_customer_date is null;
-  
+## Fonte dos dados
+Brazilian E-Commerce Public Dataset by Olist (Kaggle). Dataset público e
+anonimizado. Projeto pessoal de estudo, sem vínculo com a Olist.
+O banco de dados não está neste repositório; baixe no Kaggle.
+
+## Pergunta de negócio
+Os atrasos nas entregas estão associados a uma pior experiência do
+cliente, e onde o problema se concentra?
+
+## Ferramentas
+SQL (SQLite), Power BI (DAX)
+
+## Status
+Em andamento. Etapa concluída: qualidade dos dados.
+Próxima etapa: modelo e views.
+
+## Estrutura
+- `sql/`: consultas e views
+- `docs/`: documentação de qualidade dos dados e decisões de tratamento
