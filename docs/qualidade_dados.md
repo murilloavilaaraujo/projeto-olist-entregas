@@ -33,6 +33,27 @@ porque não descarta pedidos e evita contar o mesmo pedido duas vezes.
 **Limitação:** em 209 pedidos as notas são diferentes entre si, e a
 média pode esconder uma mudança de opinião do cliente.
 
+## Resultados das consultas
+
+### Consulta 1: pedidos por status
+
+| order_status | pedidos |
+|---|---|
+| delivered | 96478 |
+| shipped | 1107 |
+| canceled | 625 |
+| unavailable | 609 |
+| invoiced | 314 |
+| processing | 301 |
+| created | 5 |
+| approved | 2 |
+
+### Consulta 2: pedidos entregues sem data de entrega
+
+| pedidos_sem_data |
+|---|
+| 8 |
+
 ## Fonte dos dados
 
 Brazilian E-Commerce Public Dataset by Olist (Kaggle). Projeto  
