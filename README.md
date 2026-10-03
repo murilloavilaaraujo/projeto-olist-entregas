@@ -1,23 +1,12 @@
-# Entregas atrasadas e satisfação do cliente (Olist)
-
-Análise de entregas atrasadas e satisfação do cliente com SQL e Power BI.
-
-## Fonte dos dados
-Brazilian E-Commerce Public Dataset by Olist (Kaggle). Dataset público e
-anonimizado. Projeto pessoal de estudo, sem vínculo com a Olist.
-O banco de dados não está neste repositório; baixe no Kaggle.
-
-## Pergunta de negócio
-Os atrasos nas entregas estão associados a uma pior experiência do
-cliente, e onde o problema se concentra?
-
-## Ferramentas
-SQL (SQLite), Power BI (DAX)
-
 ## Status
-Em andamento. Etapas concluídas: qualidade dos dados e modelo (views).
-Próxima etapa: dashboard no Power BI.
+Em andamento. Etapas concluídas: qualidade dos dados, modelo (views) e página 1 do dashboard.
+Próxima etapa: página 2 (efeito do atraso na nota).
+
+## Dashboard (em construção)
+![Página 1: resumo](imagens/pagina1_resumo.png)
 
 ## Estrutura
 - `sql/`: consultas de qualidade dos dados e views do modelo dimensional
 - `docs/`: documentação de qualidade dos dados e decisões de tratamento
+- `powerbi/`: medidas DAX
+- `imagens/`: prints do dashboard
