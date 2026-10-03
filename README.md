@@ -3,7 +3,7 @@ Em andamento. Etapas concluídas: qualidade dos dados, modelo (views) e página 
 Próxima etapa: página 2 (efeito do atraso na nota).
 
 ## Dashboard (em construção)
-![Página 1: resumo](imagens/pagina1_resumo.png)
+   ![Página 1: resumo](pagina1_resumo.png)
 
 ## Estrutura
 - `sql/`: consultas de qualidade dos dados e views do modelo dimensional
